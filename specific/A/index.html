@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+        <!-- 
+            As you may already be able to tell,
+            I am not that good at front end web design.
+        --> 
+        <head>
+            <title> Stephen Harris - Portfolio </title>
+            <link rel="stylesheet" type="text/css" href="/common/style.css">
+        </head>
+    <body>
+
+        <div> <!--style="width: 100%;"-->
+             <div id="profile">
+                 <img src="/media/steve_portrait_256x256_compressed.jpg" 
+                     style="width:256px;height:256px;border-radius: 100%;
+                     border: 0px solid #ff675b;">
+                     
+                <p>
+                    <b>Stephen Harris</b> <br>
+                    Computer Engineering (BS) Student <br>
+                    stephen.harris@utahtech.edu
+                </p>
+                <p>
+                    <a href="https://www.linkedin.com/in/stephen-harris-7b7513196/">LinkedIn</a> &ensp;
+                    <a href="/media/resume-2025-stephen-harris.pdf">Resume</a>
+                </p>
+                <!-- keep associates information in resume. save portfolio for projects -->
+                
+                <p> 
+                    <br><br>
+                    <b>Preferred Languages</b> <br>
+                    &#8195; C 17 <br>
+                    &#8195; Lua <br>
+                    &#8195; x86 Intel Asm <br>
+                    <br>
+                    <b>Familiar Languages</b> <br>
+                    &#8195; GLSL (OpenGL) <br>
+                    &#8195; Python 3 <br>
+                    &#8195; C++ 11<br>
+                    &#8195; RISC-V Asm <br>
+                    &#8195; Windows Batch <br>
+                    &#8195; Linux Bash/Shell <br>
+                    &#8195; Makefile <br>
+                    &#8195; Javascript ES6 <br>
+                    &#8195; AVR Asm <br>
+                    <br>
+                    <b>Others I Don't Often Use</b> <br>
+                    &#8195; Matlab <br>
+                    &#8195; Golang <br>
+                    &#8195; HTML5 <br>
+                    &#8195; CSS <br>
+                    &#8195; MSP430 Asm <br>
+                    <br>
+                    <b>Familiar Systems/Tools</b> <br>
+                    &#8195; ATMega328 Processor <br>
+                    &#8195; MSP430 Processor <br>
+                    &#8195; Kicad (PCB/Schematic Cad) <br>
+                    &#8195; OpenGL 3.0/OpenGL ES <br>
+                    &#8195; Windows API (WinAPI) <br>
+                    &#8195; Linux OS <br>
+                    &#8195; Windows OS <br>
+                    &#8195; Blender 4.2 <br>
+                    &#8195; Microsoft Excel <br>
+                </p>
+             </div>
+             
+             <div id="body"> <!--style="float:right;"-->
+
+                <h1 style="margin-bottom: -10px;"> Showcase </h1>
+             
+                <!-- I should order these by date of creation -->
+
+
+                <div class="body-element"><br><br>
+                <p> <b>[2025] Turbo Regatta Project (C, Arduino, MSP430, KiCad, LTSpice)</b> </p>
+                <p> The Turbo Regatta is a collaborative project for engineers at Utah Tech 
+                University, which involves designing and building a custom built electric motor, 
+                and user interface dashboard, attached to a repurposed pedal boat to be used 
+                in the Turbo Regatta Boat Race during the 
+                <a href="https://mech.utahtech.edu/discovery-design-day/">
+                    2025 Utah Tech Engineering Design Day Event.
+                </a> I was responsible for selecting electrical components, designing the wiring 
+                diagram, and writing all of the code that drove the two microcontrollers.</p>
+                <div>
+                    <a class="a-to-image" style="display: hidden;"> 
+                        /turbo-regatta/main/media/ui-circuit-diagram.png </a>
+                    <a class="a-to-image" style="display: hidden;"> 
+                        /turbo-regatta/main/media/pcb.webp </a>
+                </div>
+                <!--p><a href=
+                "https://raw.githubusercontent.com/stephen010x/turbo-regatta/main/media/pier-pressure-intro.mp4"
+                >Turbo Regatta Video</a></p-->
+                <p><a href="https://github.com/stephen010x/turbo-regatta">
+                    Read More at the GitHub Repository
+                </a></p>
+                </div>
+
+
+                <div class="body-element"><br><br>
+                <p> <b>[2025] 3D Game Library (WebGL, WebASM/C, EMCC)</b> </p>
+                <p> A from-scratch 3D Web Game Library, written in C, and compiled to WebAssembly. 
+                Games built in this library can run in a browser environment. This was designed to 
+                help speed up development for my very ambitious graphics assignments for CS-3600.</p>
+                <div>
+                    <a class="a-to-image" style="display: hidden;"> 
+                        /webgl-c-frame/main/media/maze2.webp </a>
+                    <a class="a-to-image" style="display: hidden;"> 
+                        /webgl-c-frame/main/media/terrain.webp </a>
+                </div>
+
+                <p>
+                    <a href="https://stephen010x.github.io/projects/webgl-c-frame/terrain">
+                        Play Terrain Generation Demo in-Browser</a><br>
+                    <a href="https://stephen010x.github.io/projects/webgl-c-frame/maze">
+                        Play 3D Maze Demo</a> (press '4' to see the cool stuff) <br>
+                    <a href="https://stephen010x.github.io/projects/webgl-c-frame/fractal">
+                        Play Fractal Zoom Demo in-Browser</a><br>
+                    <a href="https://stephen010x.github.io/projects/webgl-c-frame/chess">
+                        Play Chess Set Demo in-Browser</a><br>
+                    <a href="https://stephen010x.github.io/projects/webgl-c-frame/bezier">
+                        Play 3D Bezier Curves Demo in-Browser</a><br>
+                </p>
+                
+                <p><a href="https://github.com/stephen010x/webgl-c-frame">
+                    Read More at the GitHub Repository
+                </a></p>
+                </div>
+
+
+
+                <div class="body-element"><br><br>
+                <p> <b>[2024] Arduino AVR Runtime Environment (AVR Assembly, ATmega Processor)</b> </p>
+                <p> In order to make an Embedded Systems class assignment more challenging for myself, 
+                I created an AVR runtime environment for Arduino from scratch using nothing but the AVR
+                Assembly language. This project demonstrates a custom implementation of the startup code,
+                the interrtupt vector table, and the system clock, that would otherwise be implemented
+                by the Arduino AVR Core.</p>
+                <p><a href="https://github.com/stephen010x/avr-env">
+                    Read More at the GitHub Repository
+                </a></p>
+                </div>
+
+
+                
+                <div class="body-element"><br><br>
+                <p> <b>[2024] Arduino DHT11-Sensor Library (C++, Arduino)</b> </p>
+                <p> A C++ library for the Arduino-Uno microcontroller
+                that communicates with and reads humidity/temperature 
+                values from the Adafruit DHT11-Sensor.</p>
+                <p><a href="https://github.com/stephen010x/DHT11-lib">
+                    Read More at the GitHub Repository</a></p>
+                </div>
+
+
+
+                <div class="body-element"><br><br>
+                <p> <b>[2024] UT Design Day Rock-Em Sock-Em (C/C++, Arduino)</b> </p>
+                <p> A group project for the official Utah Tech University Engineering Design Day 
+                presented at the Carnival Games portion of the event. A Rock-Em Sock-Em
+                inspired game driven by servos, pound pads, and four microcontrollers using I2C 
+                protocols. I wrote all of the code for this project, as well as several 
+                companion libraries.</p>
+                <div>
+                    <a class="a-to-image" style="display: hidden;"> 
+                        /DDAY-2024-ROCKEMSOCKEM/main/media/image1.webp </a>
+                    <a class="a-to-image" style="display: hidden;"> 
+                        /DDAY-2024-ROCKEMSOCKEM/main/media/image3.webp </a>
+                </div>
+                <p><a href="https://github.com/stephen010x/DDAY-2024-ROCKEMSOCKEM">
+                    Read More at the GitHub Repository
+                </a></p>
+                </div>
+
+
+
+
+                
+            </div>
+            
+        </div>
+        <!--div style="clear:both"></div-->
+
+        <script src="/common/images.js"></script>
+
+    </body>
+</html> 
